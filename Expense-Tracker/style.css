@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2c3e50; /* Darker background */
+    color: #ecf0f1; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #34495e; /* Darker container */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #f39c12; /* Bright accent color for headings */
+}
+
+.balance {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.expense-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.expense-form input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 12px;
+    border: 1px solid #ecf0f1; /* Light border */
+    border-radius: 4px;
+    background-color: #2c3e50; /* Match background */
+    color: #ecf0f1; /* Light text color */
+}
+
+.expense-form input::placeholder {
+    color: #bdc3c7; /* Placeholder color */
+}
+
+.expense-form button {
+    padding: 12px;
+    background-color: #27ae60; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.expense-form button:hover {
+    background-color: #219653; /* Darker green on hover */
+}
+
+.expense-list {
+    margin-bottom: 20px;
+}
+
+.expense-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.expense-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #ecf0f1; /* Light border */
+    transition: background-color 0.3s ease;
+}
+
+.expense-list li:hover {
+    background-color: #1abc9c; /* Light teal on hover */
+}
+
+.delete-expenses{
+    font-size: 16px;
+    background-color: transparent;
+    color: red;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#clear-expenses {
+    width: 100%;
+    padding: 12px;
+    background-color: #e74c3c; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#clear-expenses:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .expense-form {
+        flex-direction: column;
+    }
+
+    .expense-form input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
