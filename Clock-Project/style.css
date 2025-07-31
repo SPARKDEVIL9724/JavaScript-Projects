@@ -1,0 +1,135 @@
+body {
+    background-color: #1a1a2e; /* Dark navy background */
+    font-family: 'Arial', sans-serif;
+    color: #e6e6e6;
+}
+
+h1 {
+    text-align: center;
+    color: #a685e2; /* Light purple */
+    padding: 20px 0;
+    margin: 0;
+    font-size: 2.2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container, .stopwatch, .timer {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 800px;
+    padding: 25px;
+    background-color: #16213e; /* Darker navy */
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid #4a148c;
+    text-align: center;
+}
+
+.clock-label {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #a685e2;
+    font-weight: bold;
+}
+
+.clock-label span {
+    width: 30%;
+    text-align: center;
+}
+
+.digital-clock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.digital-clock div {
+    width: 22%;
+    font-size: 4rem;
+    padding: 25px 15px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #4a148c, #7b2cbf);
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 0 5px;
+}
+
+.digital-clock input {
+    width: 22%;
+    font-size: 4rem;
+    padding: 25px 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #4a148c, #7b2cbf);
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 0 5px;
+}
+
+.digital-clock div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(122, 74, 203, 0.4);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #7b2cbf, #9c4dff);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(145deg, #9c4dff, #7b2cbf);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(156, 77, 255, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container, .stopwatch, .timer {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .digital-clock div, .digital-clock input {
+        font-size: 2.5rem;
+        padding: 15px 10px;
+    }
+    
+    .clock-label {
+        font-size: 1.2rem;
+    }
+    
+    .button-group {
+        flex-wrap: wrap;
+    }
+}
+
+.hide{
+    display:none;
+}

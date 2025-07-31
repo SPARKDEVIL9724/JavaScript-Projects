@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Digital Clock</h1>
+    <div class="container">    
+        <div class="clock-label">
+        <span>Hour</span>
+        <span>Minute</span>
+        <span>Second</span>
+        </div>
+        <div class="digital-clock">
+            <div class="clock-hour"></div>
+            <div class="clock-minute"></div>
+            <div class="clock-second"></div>
+        </div>
+    </div>
+
+    <h1>StopWatch</h1>
+    <div class="stopwatch">
+        <div class="clock-label">
+            <span>Hour</span>
+            <span>Minute</span>
+            <span>Second</span>
+            <span>Millisecond</span>
+        </div>
+        <div class="digital-clock">
+            <div class="hour">00</div>
+            <div class="minute">00</div>
+            <div class="second">00</div>
+            <div class="milisecond">00</div>
+        </div>
+        <button class="reset-stopwatch hide">Reset</button>
+        <button class="start-stopwatch">Start</button>
+        <button class="stop-stopwatch hide">Stop</button>
+    </div>
+
+    <h1>Timer</h1>
+    <div class="timer">
+        <div class="clock-label">
+        <span>Hour</span>
+        <span>Minute</span>
+        <span>Second</span>
+    </div>
+    <div class="digital-clock">
+        <input class="timer-hour" name="timer-hour" placeholder="00" type="number" min="0" max="99"/>
+        <input class="timer-minute" name="timer-minute" placeholder="00" type="number" max="59" min="0"/>
+        <input class="timer-second" name="timer-second" placeholder="00" type="number" max="59" min="0"/>
+    </div>
+    <div class="button-group">
+        <button class="pause-timer hide">Pause</button>
+        <button class="start-timer">Start</button>
+        <button class="delete-timer hide">Delete</button>
+    </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script src="script2.js"></script>
+</body>
+</html>
